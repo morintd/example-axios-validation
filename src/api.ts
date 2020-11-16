@@ -4,7 +4,7 @@ import deepmerge from 'deepmerge';
 
 declare module 'axios' {
   export interface AxiosRequestConfig {
-    validate?: Ajv.ValidateFunction,
+    validate?: Ajv.ValidateFunction;
     nullRawData?: Object;
   }
 }
@@ -12,7 +12,6 @@ declare module 'axios' {
 export const api = axios.create({
   baseURL: 'http://localhost:80',
 });
-
 
 api.interceptors.response.use(async (response) => {
   const { validate } = response.config;

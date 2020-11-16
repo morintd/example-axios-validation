@@ -26,8 +26,8 @@ export type RawLoginUserResponse = {
 export const nullRawLoginUserResponse: RawLoginUserResponse = {
   user: {
     id: '',
-    createdAt: "2018-09-22T15:00:00.000Z",
-    updatedAt: "2018-09-22T15:00:00.000Z",
+    createdAt: '2018-09-22T15:00:00.000Z',
+    updatedAt: '2018-09-22T15:00:00.000Z',
     email: '',
     username: '',
     firstname: '',
@@ -35,8 +35,8 @@ export const nullRawLoginUserResponse: RawLoginUserResponse = {
     roles: [],
     signUp: {
       id: '',
-      createdAt: "2018-09-22T15:00:00.000Z",
-      updatedAt: "2018-09-22T15:00:00.000Z",
+      createdAt: '2018-09-22T15:00:00.000Z',
+      updatedAt: '2018-09-22T15:00:00.000Z',
       validateEmail: true,
       facebook: null,
       gmail: null,

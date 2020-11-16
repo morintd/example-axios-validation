@@ -7,7 +7,7 @@ import rawLoginUserResponseJsc from './dto/schema/raw-login-user-response.jsc';
 import { UserToLoginDto } from './dto/user-to-login.dto';
 
 const ajv = new Ajv();
-const validate= ajv.compile(rawLoginUserResponseJsc);
+const validate = ajv.compile(rawLoginUserResponseJsc);
 
 export async function login({ email, password }: UserToLoginDto): Promise<LoginUserRequestDto> {
   return api
